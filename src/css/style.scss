@@ -98,7 +98,12 @@ button:focus {
   }
   &.button-gradient {
     background: linear-gradient(107deg, #ff705a 0%, #f2a355 100%);
+    transition: all 0.3s ease-in-out;
     color: #ffffff;
+    &:hover {
+      border: 2px solid transparent;
+      transition: all 0.3s ease-in-out;
+    }
   }
   &.gradient-border {
     border: 2px solid #ffffff;
@@ -106,6 +111,12 @@ button:focus {
   &.button-outline-white {
     border: 2px solid #ffffff;
     color: #ffffff;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      background-color: #ffffff;
+      color: #000000;
+      transition: all 0.3s ease-in-out;
+    }
   }
 }
 .card-heading {
@@ -142,13 +153,18 @@ button:focus {
       }
     }
     .navbar-collapse {
+      z-index: 999999999999999999999 !important;
       background-color: #ffffff;
       box-shadow: 8px 13px 23px #0000001a;
       transform: translateY(20px);
       border-radius: 8px;
       .navbar-nav {
-        padding: 30px;
+        padding: 30px 0;
         .nav-item {
+          padding: 0 30px;
+          &:hover {
+            background-color: #f9f9f9;
+          }
           .nav-link {
             color: #142339;
             font-size: $para-size;
@@ -204,14 +220,14 @@ button:focus {
     .banner-shape-divider .shape-fill {
       fill: #ffffff;
     }
-    /** For tablet devices **/
+    // For tablet devices
     @media (min-width: 768px) and (max-width: 1023px) {
       .banner-shape-divider svg {
         width: calc(274% + 1.3px);
         height: 283px;
       }
     }
-    /** For mobile devices **/
+    // For mobile devices
     @media (max-width: 767px) {
       .banner-shape-divider svg {
         width: calc(271% + 1.3px);
@@ -248,11 +264,11 @@ button:focus {
     .border-end {
       border-right: 0 !important;
       @media only screen and (min-width: 991px) {
-        border-right: 1px solid #707070 !important;
+        border-right: 2px solid #707070 !important;
       }
     }
     .border-bottom {
-      border-bottom: 1px solid #707070 !important;
+      border-bottom: 2px solid #707070 !important;
       @media only screen and (min-width: 991px) {
         border-bottom: 0 !important;
       }
@@ -402,9 +418,21 @@ footer {
     }
     .footer-social-icon {
       i {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        text-align: center;
+        border: 1px solid #ffffff;
+        border-radius: 50%;
         font-size: 18px;
         margin: 0 20px;
         color: #ffffff;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          color: #5a009e;
+          transition: all 0.3s ease-in-out;
+          background-color: #ffffff;
+        }
         @media only screen and (max-width: 575px) {
           font-size: 16px;
         }
@@ -444,4 +472,20 @@ footer {
       color: #ffffff;
     }
   }
+}
+
+/* ====== Back to Top ====== */
+#back-to-top {
+  opacity: 0;
+  position: fixed;
+  right: 30px;
+  bottom: 20px;
+  border: 0;
+  background-color: #4d3ce5;
+  color: #ffffff;
+  padding: 10px 15px;
+  border-radius: 3px;
+  transition: all 0.4s linear;
+  z-index: 999999999;
+  transform: translateY(-300px);
 }
