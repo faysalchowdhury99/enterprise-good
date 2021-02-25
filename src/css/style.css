@@ -191,7 +191,7 @@ button:focus {
 }
 
 #header-section .navbar .navbar-collapse {
-  z-index: 999999999999999999999 !important;
+  z-index: 9999999999999999999999999999 !important;
   background-color: #ffffff;
   -webkit-box-shadow: 8px 13px 23px #0000001a;
           box-shadow: 8px 13px 23px #0000001a;
@@ -250,7 +250,7 @@ button:focus {
 #banner-section .banner-bg-layer .banner-content .banner-showed-img {
   bottom: 0;
   left: 0;
-  z-index: 999999999999999999 !important;
+  z-index: 99 !important;
 }
 
 #banner-section .banner-bg-layer .banner-shape-divider {
