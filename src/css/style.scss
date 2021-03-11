@@ -49,6 +49,16 @@ button:focus {
 .poligon-bold {
   font-family: $p-bold;
 }
+@font-face {
+  font-family: 'sofia-pro-bold';
+  src: url('../fonts/SofiaPro-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+.sofia-pro {
+  font-family: 'sofia-pro-bold';
+}
 /* ======= Reuseable ======= */
 .after-heading {
   font-family: $p-bold;
@@ -141,7 +151,7 @@ button:focus {
       .dot-icon {
         transition: all 0.3s ease-in-out;
         &.rotate {
-          transform: rotate(45deg);
+          transform: rotate(135deg);
           transition: all 0.3s ease-in-out;
         }
       }
@@ -193,6 +203,9 @@ button:focus {
     }
     // Banner Content
     .banner-content {
+      .heading {
+        font-family: 'sofia-pro-bold';
+      }
       .opacity-0 {
         opacity: 0;
       }
@@ -571,6 +584,9 @@ footer {
   /* ====== Why Section ====== */
   #why-section {
     .right-side {
+      .heading {
+        font-family: 'sofia-pro-bold';
+      }
       .para-text {
         b {
           color: #ff461c;

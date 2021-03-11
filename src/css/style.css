@@ -47,6 +47,18 @@ button:focus {
   font-family: "poligon-bold";
 }
 
+@font-face {
+  font-family: 'sofia-pro-bold';
+  src: url("../fonts/SofiaPro-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+.sofia-pro {
+  font-family: 'sofia-pro-bold';
+}
+
 /* ======= Reuseable ======= */
 .after-heading {
   font-family: "poligon-bold";
@@ -173,8 +185,8 @@ button:focus {
 }
 
 #header-section .navbar .navbar-toggler .dot-icon.rotate {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -241,6 +253,10 @@ button:focus {
   #banner-section .banner-bg-layer {
     padding: 150px 0 0 0;
   }
+}
+
+#banner-section .banner-bg-layer .banner-content .heading {
+  font-family: 'sofia-pro-bold';
 }
 
 #banner-section .banner-bg-layer .banner-content .opacity-0 {
@@ -713,6 +729,10 @@ footer .footer-copyright a {
 
 #page-2 #marketing-oriented-way-section .right-side .box .para-text {
   color: #ff771c;
+}
+
+#page-2 #why-section .right-side .heading {
+  font-family: 'sofia-pro-bold';
 }
 
 #page-2 #why-section .right-side .para-text b {
