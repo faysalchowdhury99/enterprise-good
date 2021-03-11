@@ -13,7 +13,7 @@ button:focus {
 }
 
 .container {
-  padding: 0 20px !important;
+  padding: 0 30px !important;
 }
 
 .media-body {
@@ -111,7 +111,7 @@ button:focus {
 }
 
 .button.button-rounded {
-  border-radius: 16px;
+  border-radius: 12px;
 }
 
 .button.button-big-rounded {
@@ -125,14 +125,14 @@ button:focus {
   color: #ffffff;
 }
 
-.button.button-gradient:hover {
+.button.gradient-border {
+  border: 2px solid #ffffff;
+}
+
+.button.gradient-border:hover {
   border: 2px solid transparent;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-}
-
-.button.gradient-border {
-  border: 2px solid #ffffff;
 }
 
 .button.button-outline-white {
@@ -269,10 +269,6 @@ button:focus {
   height: 450px;
 }
 
-#banner-section .banner-bg-layer .banner-shape-divider .shape-fill {
-  fill: #ffffff;
-}
-
 @media (min-width: 768px) and (max-width: 1023px) {
   #banner-section .banner-bg-layer .banner-shape-divider svg {
     width: calc(274% + 1.3px);
@@ -285,6 +281,10 @@ button:focus {
     width: calc(271% + 1.3px);
     height: 200px;
   }
+}
+
+#banner-section .banner-bg-layer .banner-shape-divider .shape-fill {
+  fill: #ffffff;
 }
 
 /* ======= Problem Section ======= */
@@ -412,10 +412,6 @@ button:focus {
   padding: 100px 0;
 }
 
-#blog-section .container {
-  padding: 0 30px !important;
-}
-
 @media only screen and (max-width: 991px) {
   #blog-section {
     padding: 80px 0;
@@ -500,10 +496,6 @@ footer {
   footer {
     padding-top: 150px;
   }
-}
-
-footer .container {
-  padding: 0 30px !important;
 }
 
 footer .footer-widget {
@@ -605,5 +597,227 @@ footer .footer-copyright a {
   z-index: 999999999;
   -webkit-transform: translateY(-300px);
           transform: translateY(-300px);
+}
+
+/* ================================= */
+/* ====== Page-2 ====== */
+/* ================================= */
+#page-2 {
+  /* ====== Banner Section ====== */
+  /* ====== Vicious Circle Section ====== */
+  /* ====== How We Consume Section ====== */
+  /* ====== How We Consume Section ====== */
+  /* ====== Why Section ====== */
+  /* ====== Make Business Follow Section ====== */
+  /* ====== Make Business Follow Section ====== */
+}
+
+#page-2 #banner-section {
+  background: url("../img/page-2/banner-bg.png");
+}
+
+#page-2 #banner-section .banner-bg-layer .banner-content {
+  padding-bottom: 400px;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  #page-2 #banner-section .banner-bg-layer .banner-content {
+    padding-bottom: 250px;
+  }
+}
+
+@media (max-width: 767px) {
+  #page-2 #banner-section .banner-bg-layer .banner-content {
+    padding-bottom: 150px;
+  }
+}
+
+#page-2 #banner-section .banner-bg-layer .banner-shape-divider svg {
+  height: 450px;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  #page-2 #banner-section .banner-bg-layer .banner-shape-divider svg {
+    height: 350px;
+  }
+}
+
+@media (max-width: 767px) {
+  #page-2 #banner-section .banner-bg-layer .banner-shape-divider svg {
+    height: 150px;
+  }
+}
+
+#page-2 #vicious-circle-section {
+  padding: 100px 0;
+}
+
+@media (max-width: 575px) {
+  #page-2 #vicious-circle-section {
+    padding: 50px 0;
+  }
+}
+
+#page-2 #how-we-consume-section .bg-color {
+  background-color: #9100ff;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+#page-2 #how-we-consume-section .bg-color .bg-image {
+  background-image: url("../img/page-2//how-we-consume-bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 50px;
+}
+
+@media only screen and (max-width: 991px) {
+  #page-2 #how-we-consume-section .bg-color .bg-image {
+    background-position: center left;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  #page-2 #how-we-consume-section .bg-color .bg-image {
+    padding: 30px;
+  }
+}
+
+#page-2 #marketing-oriented-way-section {
+  padding: 100px 0;
+}
+
+@media (max-width: 575px) {
+  #page-2 #marketing-oriented-way-section {
+    padding: 60px 0;
+  }
+}
+
+#page-2 #marketing-oriented-way-section .left-side .marketing-oriented-way-check-list .media i {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  font-size: 10px;
+  color: #ff771c;
+  margin-top: 10px;
+}
+
+#page-2 #marketing-oriented-way-section .right-side {
+  background: #fff7f2;
+  border-radius: 30px;
+}
+
+#page-2 #marketing-oriented-way-section .right-side .box {
+  border-radius: 15px;
+}
+
+#page-2 #marketing-oriented-way-section .right-side .box .para-text {
+  color: #ff771c;
+}
+
+#page-2 #why-section .right-side .para-text b {
+  color: #ff461c;
+}
+
+#page-2 #make-business-follow-section {
+  padding: 100px 0;
+}
+
+@media (max-width: 575px) {
+  #page-2 #make-business-follow-section {
+    padding: 50px 0;
+  }
+}
+
+#page-2 #make-business-follow-section .bg-image {
+  background-image: url("../img//page-2//make-business-follow-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 80px 50px;
+  border-radius: 28px;
+  overflow: hidden;
+}
+
+@media (max-width: 575px) {
+  #page-2 #make-business-follow-section .bg-image {
+    padding: 50px 30px;
+    background-position: left;
+  }
+}
+
+#page-2 #make-business-follow-section .left-side .heading {
+  font-family: "poligon-regular";
+}
+
+#page-2 #make-business-follow-section .left-side .heading b {
+  color: #ff461c;
+  border-bottom: 2px solid #ff461c;
+}
+
+#page-2 #faq-section {
+  padding-bottom: 200px;
+}
+
+@media (max-width: 991px) {
+  #page-2 #faq-section {
+    padding-bottom: 70px;
+  }
+}
+
+#page-2 #faq-section .left-side .accordion .accordion-item {
+  border: 1px solid #d8d8d8 !important;
+  border-radius: 10px;
+}
+
+#page-2 #faq-section .left-side .accordion .accordion-item .accordion-button {
+  text-align: left !important;
+  color: #3e5b72;
+  font-size: 18px;
+  font-family: "poligon-bold";
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  border: none !important;
+  background-color: transparent !important;
+}
+
+#page-2 #faq-section .left-side .accordion .accordion-item .accordion-button::after {
+  background-image: url("../img/page-2/faq-minus.svg");
+}
+
+#page-2 #faq-section .left-side .accordion .accordion-item .accordion-button.collapsed::after {
+  background-image: url("../img/page-2/faq-plus.svg");
+}
+
+#page-2 #faq-section .left-side .accordion .accordion-item .accordion-body p {
+  color: #3e5b72;
+}
+
+#page-2 #faq-section .right-side h3 {
+  color: #3e5b72;
+  font-family: "poligon-bold";
+}
+
+#page-2 #faq-section .right-side .question-form input {
+  border: 1px solid #c8c8c8;
+  border-radius: 12px;
+  color: #2b2b2b;
+  outline: none !important;
+}
+
+#page-2 #faq-section .right-side .question-form input::-webkit-input-placeholder {
+  color: #b2b7bb;
+}
+
+#page-2 #faq-section .right-side .question-form input:-ms-input-placeholder {
+  color: #b2b7bb;
+}
+
+#page-2 #faq-section .right-side .question-form input::-ms-input-placeholder {
+  color: #b2b7bb;
+}
+
+#page-2 #faq-section .right-side .question-form input::placeholder {
+  color: #b2b7bb;
 }
 /*# sourceMappingURL=style.css.map */
