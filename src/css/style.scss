@@ -448,7 +448,8 @@ footer {
   @media only screen and (min-width: 992px) {
     padding-top: 150px;
   }
-  background-color: #5a009e;
+  background: transparent linear-gradient(113deg, #9100ff 0%, #2b59d7 100%) 0%
+    0% no-repeat padding-box;
   .footer-widget {
     padding: 100px 0 70px 0;
     @media only screen and (max-width: 575px) {
@@ -482,6 +483,12 @@ footer {
         }
       }
     }
+    .footer-title {
+      min-height: 100px;
+      @media (max-width: 1199px) {
+        min-height: 50px;
+      }
+    }
     .foter-sub-heading {
       font-size: 24px;
       font-family: $p-bold;
@@ -497,11 +504,35 @@ footer {
         text-decoration: none;
         display: block;
         margin: 15px 0;
+        &:first-child {
+          margin-top: 0;
+        }
         @media only screen and (max-width: 575px) {
           font-size: 16px;
         }
         &:hover {
           text-decoration: underline !important;
+        }
+      }
+    }
+    .subscribe-box {
+      .subscribe-form {
+        input {
+          border-radius: 35px 35px !important;
+          box-shadow: none !important;
+          border: none !important;
+          padding: 12px 30px;
+          @media (max-width: 575px) {
+            display: block !important;
+            width: 100% !important;
+          }
+        }
+        button {
+          border-radius: 35px !important;
+          @media (max-width: 575px) {
+            display: block !important;
+            width: 100% !important;
+          }
         }
       }
     }
@@ -522,7 +553,7 @@ footer {
   right: 30px;
   bottom: 20px;
   border: 0;
-  background-color: #4d3ce5;
+  background-color: #fb7d58;
   color: #ffffff;
   padding: 10px 15px;
   border-radius: 3px;
