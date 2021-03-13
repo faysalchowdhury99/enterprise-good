@@ -1,9 +1,13 @@
-// Menu Icon Rotate
-const navbarToggler = document.querySelector('.navbar-toggler');
-const dotIcon = document.querySelector('.dot-icon');
-
-navbarToggler.addEventListener('click', () => {
-    dotIcon.classList.toggle('rotate');
+// Nav Menu Open
+const navbarOpen = document.querySelector('.navbar-open');
+const navbarCollapse = document.querySelector('#navbarNav');
+navbarOpen.addEventListener('click', () => {
+    navbarCollapse.classList.add('open');
+});
+// Nav Menu Close
+const navbarClose = document.querySelector('.navbar-close');
+navbarClose.addEventListener('click', () => {
+    navbarCollapse.classList.remove('open');
 });
 
 // Back to top Button
