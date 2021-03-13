@@ -1,15 +1,16 @@
-// Nav Menu Open
-const navbarOpen = document.querySelector('.navbar-open');
+// Nav Menu
+const navbarOpen = document.querySelector('.navbar-toggler');
+const dotIcon = document.querySelector('.dot-icon');
 const navbarCollapse = document.querySelector('#navbarNav');
 navbarOpen.addEventListener('click', () => {
-    navbarCollapse.classList.add('open');
+    dotIcon.classList.toggle('rotate');
+    navbarCollapse.classList.toggle('open');
 });
-// Nav Menu Close
-const navbarClose = document.querySelector('.navbar-close');
-navbarClose.addEventListener('click', () => {
+// Close Menu Function
+function closeMenu() {
+    dotIcon.classList.remove('rotate');
     navbarCollapse.classList.remove('open');
-});
-
+}
 // Back to top Button
 const backToTopBtn = document.getElementById('back-to-top');
 window.onscroll = function () {
