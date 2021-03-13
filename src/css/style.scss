@@ -185,6 +185,15 @@ button:focus {
         visibility: visible;
         opacity: 1;
         transition: all 0.3s ease-in-out;
+        // Nav Menu Link
+        .navbar-nav {
+          .nav-item {
+            visibility: visible;
+            opacity: 1;
+            transform: translateY(0px);
+            transition: all 1s ease-in-out;
+          }
+        }
         // Header Shape Divider
         .header-shape-divider {
           .shape-fill {
@@ -194,10 +203,15 @@ button:focus {
           }
         }
       }
+      // Nav Menu Link
       .navbar-nav {
         padding: 30px 0;
         width: 100%;
         .nav-item {
+          visibility: hidden;
+          opacity: 0;
+          transform: translateY(-250px);
+          transition: all 0.3s ease-in-out;
           padding: 0 30px;
           margin: 5px 0;
           .nav-link {
