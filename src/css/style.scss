@@ -59,6 +59,16 @@ button:focus {
 .sofia-pro {
   font-family: 'sofia-pro-bold';
 }
+@font-face {
+  font-family: 'sinthya';
+  src: url('../fonts/Sinthya.ttf');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+.sofia-pro {
+  font-family: 'sinthya';
+}
 /* ======= Reuseable ======= */
 .after-heading {
   font-family: $p-bold;
@@ -618,9 +628,11 @@ footer {
 }
 
 /* ================================= */
-/* ====== Page-2 ====== */
+/* == Common For Other pages == */
 /* ================================= */
-#page-2 {
+#page-2,
+#page-3,
+#page-4 {
   /* ====== Banner Section ====== */
   #banner-section {
     background: url('../img/page-2/banner-bg.png');
@@ -647,66 +659,6 @@ footer {
     }
   }
 
-  /* ====== Vicious Circle Section ====== */
-  #vicious-circle-section {
-    padding: 100px 0;
-    @media (max-width: 575px) {
-      padding: 50px 0;
-    }
-  }
-
-  /* ====== How We Consume Section ====== */
-  #how-we-consume-section {
-    .bg-color {
-      background-color: #9100ff;
-      border-radius: 30px;
-      overflow: hidden;
-      .bg-image {
-        background-image: url('../img/page-2//how-we-consume-bg.png');
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        padding: 50px;
-        @media only screen and (max-width: 991px) {
-          background-position: center left;
-        }
-        @media only screen and (max-width: 575px) {
-          padding: 30px;
-        }
-      }
-    }
-  }
-
-  /* ====== How We Consume Section ====== */
-  #marketing-oriented-way-section {
-    padding: 100px 0;
-    @media (max-width: 575px) {
-      padding: 60px 0;
-    }
-    .left-side {
-      .marketing-oriented-way-check-list {
-        .media {
-          i {
-            transform: rotate(45deg);
-            font-size: 10px;
-            color: #ff771c;
-            margin-top: 10px;
-          }
-        }
-      }
-    }
-    .right-side {
-      background: #fff7f2;
-      border-radius: 30px;
-      .box {
-        border-radius: 15px;
-        .para-text {
-          color: #ff771c;
-        }
-      }
-    }
-  }
-
   /* ====== Why Section ====== */
   #why-section {
     .right-side {
@@ -721,37 +673,7 @@ footer {
     }
   }
 
-  /* ====== Make Business Follow Section ====== */
-  #make-business-follow-section {
-    padding: 100px 0;
-    @media (max-width: 575px) {
-      padding: 50px 0;
-    }
-    .bg-image {
-      background-image: url('../img//page-2//make-business-follow-bg.png');
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      padding: 0 0 0 80px;
-      border-radius: 28px;
-      overflow: hidden;
-      @media (max-width: 991px) {
-        padding: 30px 30px 0 30px;
-        background-position: left;
-      }
-    }
-    .left-side {
-      .heading {
-        font-family: $p-regular;
-        b {
-          color: #ff461c;
-          border-bottom: 2px solid #ff461c;
-        }
-      }
-    }
-  }
-
-  /* ====== Make Business Follow Section ====== */
+  /* ====== FAQ Section ====== */
   #faq-section {
     padding-bottom: 200px;
     @media (max-width: 991px) {
@@ -803,6 +725,190 @@ footer {
           }
         }
       }
+    }
+  }
+}
+
+/* ================================= */
+/* ===== Page 2 ===== */
+/* ================================= */
+#page-2 {
+  /* ====== Vicious Circle Section ====== */
+  #vicious-circle-section {
+    padding: 100px 0;
+    @media (max-width: 575px) {
+      padding: 50px 0;
+    }
+  }
+
+  /* ====== How We Consume Section ====== */
+  #how-we-consume-section {
+    .bg-color {
+      background-color: #9100ff;
+      border-radius: 30px;
+      overflow: hidden;
+      .bg-image {
+        background-image: url('../img/page-2//how-we-consume-bg.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 50px;
+        @media only screen and (max-width: 991px) {
+          background-position: center left;
+        }
+        @media only screen and (max-width: 575px) {
+          padding: 30px;
+        }
+      }
+    }
+  }
+
+  /* ====== Marketing Oriented Way Section ====== */
+  #marketing-oriented-way-section {
+    padding: 100px 0;
+    @media (max-width: 575px) {
+      padding: 60px 0;
+    }
+    .left-side {
+      .marketing-oriented-way-check-list {
+        .media {
+          i {
+            transform: rotate(45deg);
+            font-size: 10px;
+            color: #ff771c;
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+    .right-side {
+      background: #fff7f2;
+      border-radius: 30px;
+      .box {
+        border-radius: 15px;
+        .para-text {
+          color: #ff771c;
+        }
+      }
+    }
+  }
+
+  /* ====== Make Business Follow Section ====== */
+  #make-business-follow-section {
+    padding: 100px 0;
+    @media (max-width: 575px) {
+      padding: 50px 0;
+    }
+    .bg-image {
+      background-image: url('../img//page-2//make-business-follow-bg.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      padding: 0 0 0 80px;
+      border-radius: 28px;
+      overflow: hidden;
+      @media (max-width: 991px) {
+        padding: 30px 30px 0 30px;
+        background-position: left;
+      }
+    }
+    .left-side {
+      .heading {
+        font-family: $p-regular;
+        b {
+          color: #ff461c;
+          border-bottom: 2px solid #ff461c;
+        }
+      }
+    }
+  }
+}
+
+/* ================================= */
+/* ====== Page 3 ===== */
+/* ================================= */
+#page-3 {
+  /* ====== Banner Section ====== */
+  #banner-section {
+    background-image: url('../img/Page-3/banner-bg.png');
+  }
+  /* ====== Text Section ====== */
+  #text-section {
+    transform: translateY(-100px);
+    @media (max-width: 767px) {
+      transform: translateY(-0px);
+    }
+    .left-side {
+      h2 {
+        font-family: 'sofia-pro-bold';
+        line-height: 1.5;
+      }
+    }
+  }
+
+  /* ====== Why Section ====== */
+  #why-section {
+    padding: 0 0 100px 0;
+    @media (max-width: 767px) {
+      padding: 50px 0;
+    }
+  }
+
+  /* ====== Q.Everything Section ====== */
+  #q-everything-section {
+    padding-bottom: 100px;
+    @media (max-width: 575px) {
+      padding-bottom: 70px;
+    }
+    .bg {
+      background: #fff7f2;
+      padding: 30px;
+      border-radius: 30px;
+    }
+    h2 {
+      font-size: 28px;
+    }
+    .left-side {
+      background: #fff7f2;
+      border-radius: 30px;
+      .box {
+        border-radius: 15px;
+      }
+      .para-text {
+        color: #ff771c;
+      }
+    }
+  }
+}
+
+/* ================================= */
+/* ====== Page 4 ===== */
+/* ================================= */
+#page-4 {
+  /* ====== Banner Section ====== */
+  #banner-section {
+    background-image: url('../img/Page-4/banner-bg.png');
+  }
+
+  /* ====== Why Section ====== */
+  #why-section {
+    padding-bottom: 150px;
+    transform: translateY(-100px);
+    padding-top: 10px;
+    @media (max-width: 991px) {
+      padding-bottom: 60px;
+      transform: translateY(0px);
+    }
+    h1 {
+      font-family: 'sinthya';
+      color: #ff771c;
+      font-size: 80px;
+      @media (max-width: 575px) {
+        font-size: 60px;
+      }
+    }
+    h2 {
+      font-family: 'sofia-pro-bold';
     }
   }
 }

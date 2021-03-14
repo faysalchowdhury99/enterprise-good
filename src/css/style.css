@@ -59,6 +59,18 @@ button:focus {
   font-family: 'sofia-pro-bold';
 }
 
+@font-face {
+  font-family: 'sinthya';
+  src: url("../fonts/Sinthya.ttf");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+.sofia-pro {
+  font-family: 'sinthya';
+}
+
 /* ======= Reuseable ======= */
 .after-heading {
   font-family: "poligon-bold";
@@ -783,52 +795,178 @@ footer .footer-copyright a {
 }
 
 /* ================================= */
-/* ====== Page-2 ====== */
+/* == Common For Other pages == */
 /* ================================= */
-#page-2 {
+#page-2,
+#page-3,
+#page-4 {
   /* ====== Banner Section ====== */
-  /* ====== Vicious Circle Section ====== */
-  /* ====== How We Consume Section ====== */
-  /* ====== How We Consume Section ====== */
   /* ====== Why Section ====== */
-  /* ====== Make Business Follow Section ====== */
-  /* ====== Make Business Follow Section ====== */
+  /* ====== FAQ Section ====== */
 }
 
-#page-2 #banner-section {
+#page-2 #banner-section,
+#page-3 #banner-section,
+#page-4 #banner-section {
   background: url("../img/page-2/banner-bg.png");
 }
 
-#page-2 #banner-section .banner-bg-layer .banner-content {
+#page-2 #banner-section .banner-bg-layer .banner-content,
+#page-3 #banner-section .banner-bg-layer .banner-content,
+#page-4 #banner-section .banner-bg-layer .banner-content {
   padding-bottom: 400px;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  #page-2 #banner-section .banner-bg-layer .banner-content {
+  #page-2 #banner-section .banner-bg-layer .banner-content,
+  #page-3 #banner-section .banner-bg-layer .banner-content,
+  #page-4 #banner-section .banner-bg-layer .banner-content {
     padding-bottom: 250px;
   }
 }
 
 @media (max-width: 767px) {
-  #page-2 #banner-section .banner-bg-layer .banner-content {
+  #page-2 #banner-section .banner-bg-layer .banner-content,
+  #page-3 #banner-section .banner-bg-layer .banner-content,
+  #page-4 #banner-section .banner-bg-layer .banner-content {
     padding-bottom: 150px;
   }
 }
 
-#page-2 #banner-section .banner-bg-layer .banner-shape-divider svg {
+#page-2 #banner-section .banner-bg-layer .banner-shape-divider svg,
+#page-3 #banner-section .banner-bg-layer .banner-shape-divider svg,
+#page-4 #banner-section .banner-bg-layer .banner-shape-divider svg {
   height: 450px;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  #page-2 #banner-section .banner-bg-layer .banner-shape-divider svg {
+  #page-2 #banner-section .banner-bg-layer .banner-shape-divider svg,
+  #page-3 #banner-section .banner-bg-layer .banner-shape-divider svg,
+  #page-4 #banner-section .banner-bg-layer .banner-shape-divider svg {
     height: 350px;
   }
 }
 
 @media (max-width: 767px) {
-  #page-2 #banner-section .banner-bg-layer .banner-shape-divider svg {
+  #page-2 #banner-section .banner-bg-layer .banner-shape-divider svg,
+  #page-3 #banner-section .banner-bg-layer .banner-shape-divider svg,
+  #page-4 #banner-section .banner-bg-layer .banner-shape-divider svg {
     height: 150px;
   }
+}
+
+#page-2 #why-section .right-side .heading,
+#page-3 #why-section .right-side .heading,
+#page-4 #why-section .right-side .heading {
+  font-family: 'sofia-pro-bold';
+}
+
+#page-2 #why-section .right-side .para-text b,
+#page-3 #why-section .right-side .para-text b,
+#page-4 #why-section .right-side .para-text b {
+  color: #ff461c;
+}
+
+#page-2 #faq-section,
+#page-3 #faq-section,
+#page-4 #faq-section {
+  padding-bottom: 200px;
+}
+
+@media (max-width: 991px) {
+  #page-2 #faq-section,
+  #page-3 #faq-section,
+  #page-4 #faq-section {
+    padding-bottom: 70px;
+  }
+}
+
+#page-2 #faq-section .left-side .accordion .accordion-item,
+#page-3 #faq-section .left-side .accordion .accordion-item,
+#page-4 #faq-section .left-side .accordion .accordion-item {
+  border: 1px solid #d8d8d8 !important;
+  border-radius: 10px;
+}
+
+#page-2 #faq-section .left-side .accordion .accordion-item .accordion-button,
+#page-3 #faq-section .left-side .accordion .accordion-item .accordion-button,
+#page-4 #faq-section .left-side .accordion .accordion-item .accordion-button {
+  text-align: left !important;
+  color: #3e5b72;
+  font-size: 18px;
+  font-family: "poligon-bold";
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  border: none !important;
+  background-color: transparent !important;
+}
+
+#page-2 #faq-section .left-side .accordion .accordion-item .accordion-button::after,
+#page-3 #faq-section .left-side .accordion .accordion-item .accordion-button::after,
+#page-4 #faq-section .left-side .accordion .accordion-item .accordion-button::after {
+  background-image: url("../img/page-2/faq-minus.svg");
+}
+
+#page-2 #faq-section .left-side .accordion .accordion-item .accordion-button.collapsed::after,
+#page-3 #faq-section .left-side .accordion .accordion-item .accordion-button.collapsed::after,
+#page-4 #faq-section .left-side .accordion .accordion-item .accordion-button.collapsed::after {
+  background-image: url("../img/page-2/faq-plus.svg");
+}
+
+#page-2 #faq-section .left-side .accordion .accordion-item .accordion-body p,
+#page-3 #faq-section .left-side .accordion .accordion-item .accordion-body p,
+#page-4 #faq-section .left-side .accordion .accordion-item .accordion-body p {
+  color: #3e5b72;
+}
+
+#page-2 #faq-section .right-side h3,
+#page-3 #faq-section .right-side h3,
+#page-4 #faq-section .right-side h3 {
+  color: #3e5b72;
+  font-family: "poligon-bold";
+}
+
+#page-2 #faq-section .right-side .question-form input,
+#page-3 #faq-section .right-side .question-form input,
+#page-4 #faq-section .right-side .question-form input {
+  border: 1px solid #c8c8c8;
+  border-radius: 12px;
+  color: #2b2b2b;
+  outline: none !important;
+}
+
+#page-2 #faq-section .right-side .question-form input::-webkit-input-placeholder,
+#page-3 #faq-section .right-side .question-form input::-webkit-input-placeholder,
+#page-4 #faq-section .right-side .question-form input::-webkit-input-placeholder {
+  color: #b2b7bb;
+}
+
+#page-2 #faq-section .right-side .question-form input:-ms-input-placeholder,
+#page-3 #faq-section .right-side .question-form input:-ms-input-placeholder,
+#page-4 #faq-section .right-side .question-form input:-ms-input-placeholder {
+  color: #b2b7bb;
+}
+
+#page-2 #faq-section .right-side .question-form input::-ms-input-placeholder,
+#page-3 #faq-section .right-side .question-form input::-ms-input-placeholder,
+#page-4 #faq-section .right-side .question-form input::-ms-input-placeholder {
+  color: #b2b7bb;
+}
+
+#page-2 #faq-section .right-side .question-form input::placeholder,
+#page-3 #faq-section .right-side .question-form input::placeholder,
+#page-4 #faq-section .right-side .question-form input::placeholder {
+  color: #b2b7bb;
+}
+
+/* ================================= */
+/* ===== Page 2 ===== */
+/* ================================= */
+#page-2 {
+  /* ====== Vicious Circle Section ====== */
+  /* ====== How We Consume Section ====== */
+  /* ====== Marketing Oriented Way Section ====== */
+  /* ====== Make Business Follow Section ====== */
 }
 
 #page-2 #vicious-circle-section {
@@ -898,14 +1036,6 @@ footer .footer-copyright a {
   color: #ff771c;
 }
 
-#page-2 #why-section .right-side .heading {
-  font-family: 'sofia-pro-bold';
-}
-
-#page-2 #why-section .right-side .para-text b {
-  color: #ff461c;
-}
-
 #page-2 #make-business-follow-section {
   padding: 100px 0;
 }
@@ -942,69 +1072,120 @@ footer .footer-copyright a {
   border-bottom: 2px solid #ff461c;
 }
 
-#page-2 #faq-section {
-  padding-bottom: 200px;
+/* ================================= */
+/* ====== Page 3 ===== */
+/* ================================= */
+#page-3 {
+  /* ====== Banner Section ====== */
+  /* ====== Text Section ====== */
+  /* ====== Why Section ====== */
+  /* ====== Q.Everything Section ====== */
 }
 
-@media (max-width: 991px) {
-  #page-2 #faq-section {
+#page-3 #banner-section {
+  background-image: url("../img/Page-3/banner-bg.png");
+}
+
+#page-3 #text-section {
+  -webkit-transform: translateY(-100px);
+          transform: translateY(-100px);
+}
+
+@media (max-width: 767px) {
+  #page-3 #text-section {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+#page-3 #text-section .left-side h2 {
+  font-family: 'sofia-pro-bold';
+  line-height: 1.5;
+}
+
+#page-3 #why-section {
+  padding: 0 0 100px 0;
+}
+
+@media (max-width: 767px) {
+  #page-3 #why-section {
+    padding: 50px 0;
+  }
+}
+
+#page-3 #q-everything-section {
+  padding-bottom: 100px;
+}
+
+@media (max-width: 575px) {
+  #page-3 #q-everything-section {
     padding-bottom: 70px;
   }
 }
 
-#page-2 #faq-section .left-side .accordion .accordion-item {
-  border: 1px solid #d8d8d8 !important;
-  border-radius: 10px;
+#page-3 #q-everything-section .bg {
+  background: #fff7f2;
+  padding: 30px;
+  border-radius: 30px;
 }
 
-#page-2 #faq-section .left-side .accordion .accordion-item .accordion-button {
-  text-align: left !important;
-  color: #3e5b72;
-  font-size: 18px;
-  font-family: "poligon-bold";
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important;
-  border: none !important;
-  background-color: transparent !important;
+#page-3 #q-everything-section h2 {
+  font-size: 28px;
 }
 
-#page-2 #faq-section .left-side .accordion .accordion-item .accordion-button::after {
-  background-image: url("../img/page-2/faq-minus.svg");
+#page-3 #q-everything-section .left-side {
+  background: #fff7f2;
+  border-radius: 30px;
 }
 
-#page-2 #faq-section .left-side .accordion .accordion-item .accordion-button.collapsed::after {
-  background-image: url("../img/page-2/faq-plus.svg");
+#page-3 #q-everything-section .left-side .box {
+  border-radius: 15px;
 }
 
-#page-2 #faq-section .left-side .accordion .accordion-item .accordion-body p {
-  color: #3e5b72;
+#page-3 #q-everything-section .left-side .para-text {
+  color: #ff771c;
 }
 
-#page-2 #faq-section .right-side h3 {
-  color: #3e5b72;
-  font-family: "poligon-bold";
+/* ================================= */
+/* ====== Page 4 ===== */
+/* ================================= */
+#page-4 {
+  /* ====== Banner Section ====== */
+  /* ====== Why Section ====== */
 }
 
-#page-2 #faq-section .right-side .question-form input {
-  border: 1px solid #c8c8c8;
-  border-radius: 12px;
-  color: #2b2b2b;
-  outline: none !important;
+#page-4 #banner-section {
+  background-image: url("../img/Page-4/banner-bg.png");
 }
 
-#page-2 #faq-section .right-side .question-form input::-webkit-input-placeholder {
-  color: #b2b7bb;
+#page-4 #why-section {
+  padding-bottom: 150px;
+  -webkit-transform: translateY(-100px);
+          transform: translateY(-100px);
+  padding-top: 10px;
 }
 
-#page-2 #faq-section .right-side .question-form input:-ms-input-placeholder {
-  color: #b2b7bb;
+@media (max-width: 991px) {
+  #page-4 #why-section {
+    padding-bottom: 60px;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
 }
 
-#page-2 #faq-section .right-side .question-form input::-ms-input-placeholder {
-  color: #b2b7bb;
+#page-4 #why-section h1 {
+  font-family: 'sinthya';
+  color: #ff771c;
+  font-size: 80px;
 }
 
-#page-2 #faq-section .right-side .question-form input::placeholder {
-  color: #b2b7bb;
+@media (max-width: 575px) {
+  #page-4 #why-section h1 {
+    font-size: 60px;
+  }
+}
+
+#page-4 #why-section h2 {
+  font-family: 'sofia-pro-bold';
 }
 /*# sourceMappingURL=style.css.map */
