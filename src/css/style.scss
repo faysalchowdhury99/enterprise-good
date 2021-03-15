@@ -14,6 +14,7 @@ $button-size: 18px;
 /* ======= Basic ======= */
 body {
   font-family: 'poligon-regular';
+  overflow-x: hidden !important;
 }
 a,
 button {
@@ -632,19 +633,21 @@ footer {
 /* ================================= */
 #page-2,
 #page-3,
-#page-4 {
+#page-4,
+#page-5,
+#page-6 {
   /* ====== Banner Section ====== */
   #banner-section {
     background: url('../img/page-2/banner-bg.png');
     .banner-bg-layer {
       // Banner Content
       .banner-content {
-        padding-bottom: 400px;
+        padding-bottom: 450px;
         @media (min-width: 768px) and (max-width: 1023px) {
-          padding-bottom: 250px;
+          padding-bottom: 300px;
         }
         @media (max-width: 767px) {
-          padding-bottom: 150px;
+          padding-bottom: 200px;
         }
       }
       .banner-shape-divider svg {
@@ -910,5 +913,94 @@ footer {
     h2 {
       font-family: 'sofia-pro-bold';
     }
+  }
+}
+
+/* ================================= */
+/* ====== Page 5 ===== */
+/* ================================= */
+#page-5 {
+  /* ====== Banner Section ====== */
+  #banner-section {
+    background-image: url('../img/page-5/banner-bg.png');
+  }
+
+  /* ====== Tab Section ====== */
+  #tab-section {
+    transform: translateY(-100px);
+    @media (max-width: 991px) {
+      transform: translateY(0px);
+      padding-bottom: 70px;
+    }
+    // Tab Button
+    .nav-tabs {
+      li {
+        button {
+          font-family: 'sofia-pro-bold';
+          border: 3px solid #e6e6e6;
+          color: #e6e6e6;
+          background-color: #ffffff;
+          margin: 0 10px;
+          border-radius: 28px;
+          &.active {
+            border: 3px solid #ff461c;
+            color: #ff461c;
+          }
+        }
+      }
+    }
+    // Tab Content
+    .tab-content {
+      background: #fff7f2 0% 0% no-repeat padding-box;
+      border-radius: 30px;
+      padding: 50px 20px;
+      // Change Cards
+      .change-cards {
+        .change-card {
+          box-shadow: 0px 6px 28px #0000001a;
+          border-radius: 22px;
+          padding: 30px;
+          p {
+            color: #6d7a8e;
+          }
+          &:hover {
+            background: transparent
+              linear-gradient(121deg, #ff705a 0%, #f2a355 100%) 0% 0% no-repeat
+              padding-box;
+            box-shadow: 0px 6px 28px #0000001a;
+            cursor: pointer;
+            h3,
+            p {
+              color: #ffffff;
+            }
+          }
+        }
+      }
+      // Lets Talk
+      .lets-talk {
+        .heading {
+          color: #2a4255;
+        }
+        // Form
+        form {
+          input,
+          textarea {
+            padding: 10px 20px;
+            outline: none !important;
+            border: 0;
+            box-shadow: 0px 3px 10px #00000005;
+            border-radius: 12px;
+          }
+          textarea {
+            height: 150px;
+          }
+        }
+      }
+    }
+  }
+
+  /* ====== Footer Section ====== */
+  footer {
+    padding-top: 0 !important;
   }
 }
