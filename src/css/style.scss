@@ -1004,3 +1004,49 @@ footer {
     padding-top: 0 !important;
   }
 }
+
+/* ================================= */
+/* ====== Page 6 ===== */
+/* ================================= */
+#page-6 {
+  /* ====== Banner Section ====== */
+  #banner-section {
+    background-image: url('../img/page-5/banner-bg.png');
+  }
+
+  /* ====== Understand Section ====== */
+  #understand-section {
+    transform: translateY(-100px);
+    @media only screen and (max-width: 991px) {
+      transform: translateY(0px);
+    }
+    .section-title {
+      .para-text {
+        &.orange {
+          color: #ff461c;
+          font-family: $p-bold;
+        }
+      }
+    }
+    // accept-following-list
+    .accept-following-list-box {
+      background: #fff7f2 0% 0% no-repeat padding-box;
+      border-radius: 28px;
+      padding: 20px;
+      .media {
+        i {
+          font-size: 12px;
+          margin-top: 9px;
+        }
+      }
+    }
+  }
+
+  /* ====== Understand Section ====== */
+  #text-section {
+    padding-bottom: 250px;
+    @media only screen and (max-width: 991px) {
+      padding: 80px 0;
+    }
+  }
+}

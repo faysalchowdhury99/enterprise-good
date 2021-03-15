@@ -1326,4 +1326,55 @@ footer .footer-copyright a {
 #page-5 footer {
   padding-top: 0 !important;
 }
+
+/* ================================= */
+/* ====== Page 6 ===== */
+/* ================================= */
+#page-6 {
+  /* ====== Banner Section ====== */
+  /* ====== Understand Section ====== */
+  /* ====== Understand Section ====== */
+}
+
+#page-6 #banner-section {
+  background-image: url("../img/page-5/banner-bg.png");
+}
+
+#page-6 #understand-section {
+  -webkit-transform: translateY(-100px);
+          transform: translateY(-100px);
+}
+
+@media only screen and (max-width: 991px) {
+  #page-6 #understand-section {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+#page-6 #understand-section .section-title .para-text.orange {
+  color: #ff461c;
+  font-family: "poligon-bold";
+}
+
+#page-6 #understand-section .accept-following-list-box {
+  background: #fff7f2 0% 0% no-repeat padding-box;
+  border-radius: 28px;
+  padding: 20px;
+}
+
+#page-6 #understand-section .accept-following-list-box .media i {
+  font-size: 12px;
+  margin-top: 9px;
+}
+
+#page-6 #text-section {
+  padding-bottom: 250px;
+}
+
+@media only screen and (max-width: 991px) {
+  #page-6 #text-section {
+    padding: 80px 0;
+  }
+}
 /*# sourceMappingURL=style.css.map */
