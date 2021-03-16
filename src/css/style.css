@@ -161,7 +161,7 @@ button:focus {
 
 @media only screen and (min-width: 1600px) {
   .button {
-    font-size: 20px;
+    font-size: 22px;
   }
 }
 
@@ -1041,6 +1041,7 @@ footer .footer-copyright a {
   border: 1px solid #c8c8c8;
   border-radius: 12px;
   color: #2b2b2b;
+  font-size: 18px;
   outline: none !important;
 }
 
@@ -1074,6 +1075,16 @@ footer .footer-copyright a {
 #page-5 #faq-section .right-side .question-form input::placeholder,
 #page-6 #faq-section .right-side .question-form input::placeholder {
   color: #b2b7bb;
+}
+
+@media (min-width: 1600px) {
+  #page-2 #faq-section .right-side .question-form input,
+  #page-3 #faq-section .right-side .question-form input,
+  #page-4 #faq-section .right-side .question-form input,
+  #page-5 #faq-section .right-side .question-form input,
+  #page-6 #faq-section .right-side .question-form input {
+    font-size: 20px;
+  }
 }
 
 /* ================================= */
@@ -1400,6 +1411,14 @@ footer .footer-copyright a {
   -webkit-box-shadow: 0px 3px 10px #00000005;
           box-shadow: 0px 3px 10px #00000005;
   border-radius: 12px;
+  font-size: 18px;
+}
+
+@media (min-width: 1600px) {
+  #page-5 #tab-section .tab-content .lets-talk form input,
+  #page-5 #tab-section .tab-content .lets-talk form textarea {
+    font-size: 20px;
+  }
 }
 
 #page-5 #tab-section .tab-content .lets-talk form textarea {
