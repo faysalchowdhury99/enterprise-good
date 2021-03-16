@@ -79,6 +79,12 @@ button:focus {
   font-size: 22px;
 }
 
+@media only screen and (min-width: 1600px) {
+  .after-heading {
+    font-size: 30px;
+  }
+}
+
 .heading {
   font-size: 40px;
   font-family: "poligon-bold";
@@ -88,6 +94,12 @@ button:focus {
 @media only screen and (max-width: 575px) {
   .heading {
     font-size: 30px;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .heading {
+    font-size: 50px;
   }
 }
 
@@ -103,6 +115,12 @@ button:focus {
   }
 }
 
+@media only screen and (min-width: 1600px) {
+  .big-heading {
+    font-size: 60px;
+  }
+}
+
 .para-text {
   font-size: 18px;
   color: #000000;
@@ -111,6 +129,12 @@ button:focus {
 @media only screen and (max-width: 575px) {
   .para-text {
     font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .para-text {
+    font-size: 22px;
   }
 }
 
@@ -124,9 +148,21 @@ button:focus {
   }
 }
 
+@media only screen and (min-width: 1600px) {
+  .big-para-text {
+    font-size: 24px;
+  }
+}
+
 .button {
   font-size: 18px;
   padding: 12px 30px;
+}
+
+@media only screen and (min-width: 1600px) {
+  .button {
+    font-size: 20px;
+  }
 }
 
 @media only screen and (max-width: 575px) {
@@ -182,6 +218,12 @@ button:focus {
 @media only screen and (max-width: 575px) {
   .card-heading {
     font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .card-heading {
+    font-size: 26px;
   }
 }
 
@@ -658,12 +700,21 @@ footer .footer-widget {
   padding: 100px 0 70px 0;
 }
 
+footer .footer-widget .footer-logo {
+  margin-bottom: 30px;
+}
+
+footer .footer-widget p {
+  font-size: 18px !important;
+}
+
 @media only screen and (max-width: 575px) {
   footer .footer-widget {
     padding: 60px 0;
   }
   footer .footer-widget .footer-logo {
     width: 250px;
+    margin-bottom: 0;
   }
 }
 
@@ -674,7 +725,6 @@ footer .footer-widget .footer-social-icon i {
   text-align: center;
   border: 1px solid #ffffff;
   border-radius: 50%;
-  font-size: 18px;
   margin: 0 20px;
   color: #ffffff;
   -webkit-transition: all 0.3s ease-in-out;
@@ -946,6 +996,16 @@ footer .footer-copyright a {
   background-image: url("../img/page-2/faq-plus.svg");
 }
 
+@media (min-width: 1600px) {
+  #page-2 #faq-section .left-side .accordion .accordion-item .accordion-button,
+  #page-3 #faq-section .left-side .accordion .accordion-item .accordion-button,
+  #page-4 #faq-section .left-side .accordion .accordion-item .accordion-button,
+  #page-5 #faq-section .left-side .accordion .accordion-item .accordion-button,
+  #page-6 #faq-section .left-side .accordion .accordion-item .accordion-button {
+    font-size: 22px;
+  }
+}
+
 #page-2 #faq-section .left-side .accordion .accordion-item .accordion-body p,
 #page-3 #faq-section .left-side .accordion .accordion-item .accordion-body p,
 #page-4 #faq-section .left-side .accordion .accordion-item .accordion-body p,
@@ -961,6 +1021,16 @@ footer .footer-copyright a {
 #page-6 #faq-section .right-side h3 {
   color: #3e5b72;
   font-family: "poligon-bold";
+}
+
+@media (min-width: 1600px) {
+  #page-2 #faq-section .right-side h3,
+  #page-3 #faq-section .right-side h3,
+  #page-4 #faq-section .right-side h3,
+  #page-5 #faq-section .right-side h3,
+  #page-6 #faq-section .right-side h3 {
+    font-size: 35px;
+  }
 }
 
 #page-2 #faq-section .right-side .question-form input,
@@ -1180,6 +1250,12 @@ footer .footer-copyright a {
   font-size: 28px;
 }
 
+@media (min-width: 1600px) {
+  #page-3 #q-everything-section h2 {
+    font-size: 32px;
+  }
+}
+
 #page-3 #q-everything-section .left-side {
   background: #fff7f2;
   border-radius: 30px;
@@ -1264,16 +1340,23 @@ footer .footer-copyright a {
 
 #page-5 #tab-section .nav-tabs li button {
   font-family: 'sofia-pro-bold';
-  border: 3px solid #e6e6e6;
-  color: #e6e6e6;
+  border: 3px solid grey;
+  color: grey;
   background-color: #ffffff;
   margin: 0 10px;
   border-radius: 28px;
+  font-size: 19px;
 }
 
 #page-5 #tab-section .nav-tabs li button.active {
   border: 3px solid #ff461c;
   color: #ff461c;
+}
+
+@media (min-width: 1600px) {
+  #page-5 #tab-section .nav-tabs li button {
+    font-size: 23px;
+  }
 }
 
 #page-5 #tab-section .tab-content {

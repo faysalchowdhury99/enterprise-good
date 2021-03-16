@@ -75,6 +75,9 @@ button:focus {
   font-family: $p-bold;
   color: #ff771c;
   font-size: 22px;
+  @media only screen and (min-width: 1600px) {
+    font-size: 30px;
+  }
 }
 .heading {
   font-size: $heading;
@@ -82,6 +85,9 @@ button:focus {
   color: #000000;
   @media only screen and (max-width: 575px) {
     font-size: 30px;
+  }
+  @media only screen and (min-width: 1600px) {
+    font-size: 50px;
   }
 }
 .big-heading {
@@ -91,6 +97,9 @@ button:focus {
   @media only screen and (max-width: 575px) {
     font-size: 30px;
   }
+  @media only screen and (min-width: 1600px) {
+    font-size: 60px;
+  }
 }
 .para-text {
   font-size: $para-size;
@@ -98,15 +107,24 @@ button:focus {
   @media only screen and (max-width: 575px) {
     font-size: 16px;
   }
+  @media only screen and (min-width: 1600px) {
+    font-size: 22px;
+  }
 }
 .big-para-text {
   font-size: $big-para-size;
   @media only screen and (max-width: 575px) {
     font-size: 18px;
   }
+  @media only screen and (min-width: 1600px) {
+    font-size: 24px;
+  }
 }
 .button {
   font-size: $button-size;
+  @media only screen and (min-width: 1600px) {
+    font-size: 20px;
+  }
   padding: 12px 30px;
   @media only screen and (max-width: 575px) {
     font-size: 16px;
@@ -145,6 +163,9 @@ button:focus {
   font-family: $p-bold;
   @media only screen and (max-width: 575px) {
     font-size: 20px;
+  }
+  @media only screen and (min-width: 1600px) {
+    font-size: 26px;
   }
 }
 
@@ -518,10 +539,17 @@ footer {
     0% no-repeat padding-box;
   .footer-widget {
     padding: 100px 0 70px 0;
+    .footer-logo {
+      margin-bottom: 30px;
+    }
+    p {
+      font-size: 18px !important;
+    }
     @media only screen and (max-width: 575px) {
       padding: 60px 0;
       .footer-logo {
         width: 250px;
+        margin-bottom: 0;
       }
     }
     .footer-social-icon {
@@ -532,7 +560,6 @@ footer {
         text-align: center;
         border: 1px solid #ffffff;
         border-radius: 50%;
-        font-size: 18px;
         margin: 0 20px;
         color: #ffffff;
         transition: all 0.3s ease-in-out;
@@ -703,6 +730,9 @@ footer {
                 background-image: url('../img/page-2/faq-plus.svg');
               }
             }
+            @media (min-width: 1600px) {
+              font-size: 22px;
+            }
           }
           .accordion-body {
             p {
@@ -716,6 +746,9 @@ footer {
       h3 {
         color: #3e5b72;
         font-family: $p-bold;
+        @media (min-width: 1600px) {
+          font-size: 35px;
+        }
       }
       .question-form {
         input {
@@ -870,6 +903,9 @@ footer {
     }
     h2 {
       font-size: 28px;
+      @media (min-width: 1600px) {
+        font-size: 32px;
+      }
     }
     .left-side {
       background: #fff7f2;
@@ -937,14 +973,18 @@ footer {
       li {
         button {
           font-family: 'sofia-pro-bold';
-          border: 3px solid #e6e6e6;
-          color: #e6e6e6;
+          border: 3px solid grey;
+          color: grey;
           background-color: #ffffff;
           margin: 0 10px;
           border-radius: 28px;
+          font-size: 19px;
           &.active {
             border: 3px solid #ff461c;
             color: #ff461c;
+          }
+          @media (min-width: 1600px) {
+            font-size: 23px;
           }
         }
       }
