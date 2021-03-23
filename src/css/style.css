@@ -230,13 +230,13 @@ button:focus {
 /* ======= Header Section ======= */
 @media only screen and (max-width: 575px) {
   #header-section .navbar .navbar-brand img {
-    width: 200px;
+    width: 190px;
   }
 }
 
 #header-section .navbar .navbar-toggler {
   background-color: transparent;
-  z-index: 9999999999999999999999999 !important;
+  z-index: 9999;
 }
 
 #header-section .navbar .navbar-toggler .dot-icon {
@@ -269,7 +269,7 @@ button:focus {
   height: 0%;
   top: 0;
   left: 0;
-  z-index: 99999999 !important;
+  z-index: 999;
   background-color: #6a23f0;
   visibility: hidden;
   opacity: 0;
@@ -314,6 +314,7 @@ button:focus {
 #header-section .navbar .navbar-collapse .navbar-nav {
   padding: 30px 0;
   width: 100%;
+  /* Modal Button */
 }
 
 #header-section .navbar .navbar-collapse .navbar-nav .nav-item {
@@ -366,6 +367,12 @@ button:focus {
   }
 }
 
+#header-section .navbar .navbar-collapse .navbar-nav .nav-item .modal__btn {
+  border: 0 !important;
+  outline: 0 !important;
+  background: transparent !important;
+}
+
 #header-section .navbar .navbar-collapse .header-shape-divider {
   z-index: -1;
   position: absolute;
@@ -411,6 +418,76 @@ button:focus {
   fill: #ffffff;
 }
 
+/* Contac Us PopUp Modal */
+.modal {
+  z-index: 9999999999 !important;
+  padding: 0 !important;
+}
+
+.modal .cencel-button-box {
+  position: fixed;
+  right: 30px;
+  top: 20px;
+  z-index: 9 !important;
+}
+
+.modal .cencel-button-box button {
+  font-size: 22px;
+  padding: 5px 14px !important;
+  border-radius: 50%;
+  background-color: #212121 !important;
+}
+
+@media (max-width: 767px) {
+  .modal .cencel-button-box button {
+    font-size: 16px;
+    padding: 4px 10px !important;
+  }
+}
+
+.modal .modal-dialog {
+  width: 100% !important;
+  max-width: 100% !important;
+  background-color: #2b59d7;
+  min-height: 100vh;
+  margin: 0 !important;
+}
+
+.modal .modal-dialog .modal-content {
+  max-width: 900px;
+  margin: auto;
+  background-color: transparent;
+  border: 0;
+}
+
+@media (max-width: 1199px) {
+  .modal .modal-dialog .modal-content {
+    max-width: 720px;
+  }
+}
+
+@media (max-width: 991px) {
+  .modal .modal-dialog .modal-content {
+    max-width: 660px;
+  }
+}
+
+@media (max-width: 767px) {
+  .modal .modal-dialog .modal-content {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 575px) {
+  .modal .modal-dialog .modal-content {
+    max-width: 100%;
+    width: 100%;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+}
+
+/*========================*/
 /* ======= Banner Section ======= */
 #banner-section {
   background: transparent -webkit-gradient(linear, left top, left bottom, from(#9100ff), to(#2b59d7)) 0% 0% no-repeat padding-box;
@@ -848,128 +925,128 @@ footer .footer-copyright a {
 /* ================================= */
 /* == Common For Other pages == */
 /* ================================= */
-#page-2,
-#page-3,
-#page-4,
-#page-5,
-#page-6 {
+#consumer-page,
+#business-page,
+#about-us-page,
+#pricing-page,
+#why-page {
   /* ====== Banner Section ====== */
   /* ====== Why Section ====== */
   /* ====== FAQ Section ====== */
 }
 
-#page-2 #banner-section,
-#page-3 #banner-section,
-#page-4 #banner-section,
-#page-5 #banner-section,
-#page-6 #banner-section {
-  background: url("../img/page-2/banner-bg.png");
+#consumer-page #banner-section,
+#business-page #banner-section,
+#about-us-page #banner-section,
+#pricing-page #banner-section,
+#why-page #banner-section {
+  background: url("../img/consumer-page/banner-bg.png");
 }
 
-#page-2 #banner-section .banner-bg-layer .banner-content,
-#page-3 #banner-section .banner-bg-layer .banner-content,
-#page-4 #banner-section .banner-bg-layer .banner-content,
-#page-5 #banner-section .banner-bg-layer .banner-content,
-#page-6 #banner-section .banner-bg-layer .banner-content {
+#consumer-page #banner-section .banner-bg-layer .banner-content,
+#business-page #banner-section .banner-bg-layer .banner-content,
+#about-us-page #banner-section .banner-bg-layer .banner-content,
+#pricing-page #banner-section .banner-bg-layer .banner-content,
+#why-page #banner-section .banner-bg-layer .banner-content {
   padding-bottom: 450px;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  #page-2 #banner-section .banner-bg-layer .banner-content,
-  #page-3 #banner-section .banner-bg-layer .banner-content,
-  #page-4 #banner-section .banner-bg-layer .banner-content,
-  #page-5 #banner-section .banner-bg-layer .banner-content,
-  #page-6 #banner-section .banner-bg-layer .banner-content {
+  #consumer-page #banner-section .banner-bg-layer .banner-content,
+  #business-page #banner-section .banner-bg-layer .banner-content,
+  #about-us-page #banner-section .banner-bg-layer .banner-content,
+  #pricing-page #banner-section .banner-bg-layer .banner-content,
+  #why-page #banner-section .banner-bg-layer .banner-content {
     padding-bottom: 300px;
   }
 }
 
 @media (max-width: 767px) {
-  #page-2 #banner-section .banner-bg-layer .banner-content,
-  #page-3 #banner-section .banner-bg-layer .banner-content,
-  #page-4 #banner-section .banner-bg-layer .banner-content,
-  #page-5 #banner-section .banner-bg-layer .banner-content,
-  #page-6 #banner-section .banner-bg-layer .banner-content {
+  #consumer-page #banner-section .banner-bg-layer .banner-content,
+  #business-page #banner-section .banner-bg-layer .banner-content,
+  #about-us-page #banner-section .banner-bg-layer .banner-content,
+  #pricing-page #banner-section .banner-bg-layer .banner-content,
+  #why-page #banner-section .banner-bg-layer .banner-content {
     padding-bottom: 200px;
   }
 }
 
-#page-2 #banner-section .banner-bg-layer .banner-shape-divider svg,
-#page-3 #banner-section .banner-bg-layer .banner-shape-divider svg,
-#page-4 #banner-section .banner-bg-layer .banner-shape-divider svg,
-#page-5 #banner-section .banner-bg-layer .banner-shape-divider svg,
-#page-6 #banner-section .banner-bg-layer .banner-shape-divider svg {
+#consumer-page #banner-section .banner-bg-layer .banner-shape-divider svg,
+#business-page #banner-section .banner-bg-layer .banner-shape-divider svg,
+#about-us-page #banner-section .banner-bg-layer .banner-shape-divider svg,
+#pricing-page #banner-section .banner-bg-layer .banner-shape-divider svg,
+#why-page #banner-section .banner-bg-layer .banner-shape-divider svg {
   height: 450px;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  #page-2 #banner-section .banner-bg-layer .banner-shape-divider svg,
-  #page-3 #banner-section .banner-bg-layer .banner-shape-divider svg,
-  #page-4 #banner-section .banner-bg-layer .banner-shape-divider svg,
-  #page-5 #banner-section .banner-bg-layer .banner-shape-divider svg,
-  #page-6 #banner-section .banner-bg-layer .banner-shape-divider svg {
+  #consumer-page #banner-section .banner-bg-layer .banner-shape-divider svg,
+  #business-page #banner-section .banner-bg-layer .banner-shape-divider svg,
+  #about-us-page #banner-section .banner-bg-layer .banner-shape-divider svg,
+  #pricing-page #banner-section .banner-bg-layer .banner-shape-divider svg,
+  #why-page #banner-section .banner-bg-layer .banner-shape-divider svg {
     height: 350px;
   }
 }
 
 @media (max-width: 767px) {
-  #page-2 #banner-section .banner-bg-layer .banner-shape-divider svg,
-  #page-3 #banner-section .banner-bg-layer .banner-shape-divider svg,
-  #page-4 #banner-section .banner-bg-layer .banner-shape-divider svg,
-  #page-5 #banner-section .banner-bg-layer .banner-shape-divider svg,
-  #page-6 #banner-section .banner-bg-layer .banner-shape-divider svg {
+  #consumer-page #banner-section .banner-bg-layer .banner-shape-divider svg,
+  #business-page #banner-section .banner-bg-layer .banner-shape-divider svg,
+  #about-us-page #banner-section .banner-bg-layer .banner-shape-divider svg,
+  #pricing-page #banner-section .banner-bg-layer .banner-shape-divider svg,
+  #why-page #banner-section .banner-bg-layer .banner-shape-divider svg {
     height: 150px;
   }
 }
 
-#page-2 #why-section .right-side .heading,
-#page-3 #why-section .right-side .heading,
-#page-4 #why-section .right-side .heading,
-#page-5 #why-section .right-side .heading,
-#page-6 #why-section .right-side .heading {
+#consumer-page #why-section .right-side .heading,
+#business-page #why-section .right-side .heading,
+#about-us-page #why-section .right-side .heading,
+#pricing-page #why-section .right-side .heading,
+#why-page #why-section .right-side .heading {
   font-family: 'sofia-pro-bold';
 }
 
-#page-2 #why-section .right-side .para-text b,
-#page-3 #why-section .right-side .para-text b,
-#page-4 #why-section .right-side .para-text b,
-#page-5 #why-section .right-side .para-text b,
-#page-6 #why-section .right-side .para-text b {
+#consumer-page #why-section .right-side .para-text b,
+#business-page #why-section .right-side .para-text b,
+#about-us-page #why-section .right-side .para-text b,
+#pricing-page #why-section .right-side .para-text b,
+#why-page #why-section .right-side .para-text b {
   color: #ff461c;
 }
 
-#page-2 #faq-section,
-#page-3 #faq-section,
-#page-4 #faq-section,
-#page-5 #faq-section,
-#page-6 #faq-section {
+#consumer-page #faq-section,
+#business-page #faq-section,
+#about-us-page #faq-section,
+#pricing-page #faq-section,
+#why-page #faq-section {
   padding-bottom: 200px;
 }
 
 @media (max-width: 991px) {
-  #page-2 #faq-section,
-  #page-3 #faq-section,
-  #page-4 #faq-section,
-  #page-5 #faq-section,
-  #page-6 #faq-section {
+  #consumer-page #faq-section,
+  #business-page #faq-section,
+  #about-us-page #faq-section,
+  #pricing-page #faq-section,
+  #why-page #faq-section {
     padding-bottom: 70px;
   }
 }
 
-#page-2 #faq-section .left-side .accordion .accordion-item,
-#page-3 #faq-section .left-side .accordion .accordion-item,
-#page-4 #faq-section .left-side .accordion .accordion-item,
-#page-5 #faq-section .left-side .accordion .accordion-item,
-#page-6 #faq-section .left-side .accordion .accordion-item {
+#consumer-page #faq-section .left-side .accordion .accordion-item,
+#business-page #faq-section .left-side .accordion .accordion-item,
+#about-us-page #faq-section .left-side .accordion .accordion-item,
+#pricing-page #faq-section .left-side .accordion .accordion-item,
+#why-page #faq-section .left-side .accordion .accordion-item {
   border: 1px solid #d8d8d8 !important;
   border-radius: 10px;
 }
 
-#page-2 #faq-section .left-side .accordion .accordion-item .accordion-button,
-#page-3 #faq-section .left-side .accordion .accordion-item .accordion-button,
-#page-4 #faq-section .left-side .accordion .accordion-item .accordion-button,
-#page-5 #faq-section .left-side .accordion .accordion-item .accordion-button,
-#page-6 #faq-section .left-side .accordion .accordion-item .accordion-button {
+#consumer-page #faq-section .left-side .accordion .accordion-item .accordion-button,
+#business-page #faq-section .left-side .accordion .accordion-item .accordion-button,
+#about-us-page #faq-section .left-side .accordion .accordion-item .accordion-button,
+#pricing-page #faq-section .left-side .accordion .accordion-item .accordion-button,
+#why-page #faq-section .left-side .accordion .accordion-item .accordion-button {
   text-align: left !important;
   color: #3e5b72;
   font-size: 18px;
@@ -980,64 +1057,64 @@ footer .footer-copyright a {
   background-color: transparent !important;
 }
 
-#page-2 #faq-section .left-side .accordion .accordion-item .accordion-button::after,
-#page-3 #faq-section .left-side .accordion .accordion-item .accordion-button::after,
-#page-4 #faq-section .left-side .accordion .accordion-item .accordion-button::after,
-#page-5 #faq-section .left-side .accordion .accordion-item .accordion-button::after,
-#page-6 #faq-section .left-side .accordion .accordion-item .accordion-button::after {
-  background-image: url("../img/page-2/faq-minus.svg");
+#consumer-page #faq-section .left-side .accordion .accordion-item .accordion-button::after,
+#business-page #faq-section .left-side .accordion .accordion-item .accordion-button::after,
+#about-us-page #faq-section .left-side .accordion .accordion-item .accordion-button::after,
+#pricing-page #faq-section .left-side .accordion .accordion-item .accordion-button::after,
+#why-page #faq-section .left-side .accordion .accordion-item .accordion-button::after {
+  background-image: url("../img/consumer-page/faq-minus.svg");
 }
 
-#page-2 #faq-section .left-side .accordion .accordion-item .accordion-button.collapsed::after,
-#page-3 #faq-section .left-side .accordion .accordion-item .accordion-button.collapsed::after,
-#page-4 #faq-section .left-side .accordion .accordion-item .accordion-button.collapsed::after,
-#page-5 #faq-section .left-side .accordion .accordion-item .accordion-button.collapsed::after,
-#page-6 #faq-section .left-side .accordion .accordion-item .accordion-button.collapsed::after {
-  background-image: url("../img/page-2/faq-plus.svg");
+#consumer-page #faq-section .left-side .accordion .accordion-item .accordion-button.collapsed::after,
+#business-page #faq-section .left-side .accordion .accordion-item .accordion-button.collapsed::after,
+#about-us-page #faq-section .left-side .accordion .accordion-item .accordion-button.collapsed::after,
+#pricing-page #faq-section .left-side .accordion .accordion-item .accordion-button.collapsed::after,
+#why-page #faq-section .left-side .accordion .accordion-item .accordion-button.collapsed::after {
+  background-image: url("../img/consumer-page/faq-plus.svg");
 }
 
 @media (min-width: 1600px) {
-  #page-2 #faq-section .left-side .accordion .accordion-item .accordion-button,
-  #page-3 #faq-section .left-side .accordion .accordion-item .accordion-button,
-  #page-4 #faq-section .left-side .accordion .accordion-item .accordion-button,
-  #page-5 #faq-section .left-side .accordion .accordion-item .accordion-button,
-  #page-6 #faq-section .left-side .accordion .accordion-item .accordion-button {
+  #consumer-page #faq-section .left-side .accordion .accordion-item .accordion-button,
+  #business-page #faq-section .left-side .accordion .accordion-item .accordion-button,
+  #about-us-page #faq-section .left-side .accordion .accordion-item .accordion-button,
+  #pricing-page #faq-section .left-side .accordion .accordion-item .accordion-button,
+  #why-page #faq-section .left-side .accordion .accordion-item .accordion-button {
     font-size: 22px;
   }
 }
 
-#page-2 #faq-section .left-side .accordion .accordion-item .accordion-body p,
-#page-3 #faq-section .left-side .accordion .accordion-item .accordion-body p,
-#page-4 #faq-section .left-side .accordion .accordion-item .accordion-body p,
-#page-5 #faq-section .left-side .accordion .accordion-item .accordion-body p,
-#page-6 #faq-section .left-side .accordion .accordion-item .accordion-body p {
+#consumer-page #faq-section .left-side .accordion .accordion-item .accordion-body p,
+#business-page #faq-section .left-side .accordion .accordion-item .accordion-body p,
+#about-us-page #faq-section .left-side .accordion .accordion-item .accordion-body p,
+#pricing-page #faq-section .left-side .accordion .accordion-item .accordion-body p,
+#why-page #faq-section .left-side .accordion .accordion-item .accordion-body p {
   color: #3e5b72;
 }
 
-#page-2 #faq-section .right-side h3,
-#page-3 #faq-section .right-side h3,
-#page-4 #faq-section .right-side h3,
-#page-5 #faq-section .right-side h3,
-#page-6 #faq-section .right-side h3 {
+#consumer-page #faq-section .right-side h3,
+#business-page #faq-section .right-side h3,
+#about-us-page #faq-section .right-side h3,
+#pricing-page #faq-section .right-side h3,
+#why-page #faq-section .right-side h3 {
   color: #3e5b72;
   font-family: "poligon-bold";
 }
 
 @media (min-width: 1600px) {
-  #page-2 #faq-section .right-side h3,
-  #page-3 #faq-section .right-side h3,
-  #page-4 #faq-section .right-side h3,
-  #page-5 #faq-section .right-side h3,
-  #page-6 #faq-section .right-side h3 {
+  #consumer-page #faq-section .right-side h3,
+  #business-page #faq-section .right-side h3,
+  #about-us-page #faq-section .right-side h3,
+  #pricing-page #faq-section .right-side h3,
+  #why-page #faq-section .right-side h3 {
     font-size: 35px;
   }
 }
 
-#page-2 #faq-section .right-side .question-form input,
-#page-3 #faq-section .right-side .question-form input,
-#page-4 #faq-section .right-side .question-form input,
-#page-5 #faq-section .right-side .question-form input,
-#page-6 #faq-section .right-side .question-form input {
+#consumer-page #faq-section .right-side .question-form input,
+#business-page #faq-section .right-side .question-form input,
+#about-us-page #faq-section .right-side .question-form input,
+#pricing-page #faq-section .right-side .question-form input,
+#why-page #faq-section .right-side .question-form input {
   border: 1px solid #c8c8c8;
   border-radius: 12px;
   color: #2b2b2b;
@@ -1045,76 +1122,76 @@ footer .footer-copyright a {
   outline: none !important;
 }
 
-#page-2 #faq-section .right-side .question-form input::-webkit-input-placeholder,
-#page-3 #faq-section .right-side .question-form input::-webkit-input-placeholder,
-#page-4 #faq-section .right-side .question-form input::-webkit-input-placeholder,
-#page-5 #faq-section .right-side .question-form input::-webkit-input-placeholder,
-#page-6 #faq-section .right-side .question-form input::-webkit-input-placeholder {
+#consumer-page #faq-section .right-side .question-form input::-webkit-input-placeholder,
+#business-page #faq-section .right-side .question-form input::-webkit-input-placeholder,
+#about-us-page #faq-section .right-side .question-form input::-webkit-input-placeholder,
+#pricing-page #faq-section .right-side .question-form input::-webkit-input-placeholder,
+#why-page #faq-section .right-side .question-form input::-webkit-input-placeholder {
   color: #b2b7bb;
 }
 
-#page-2 #faq-section .right-side .question-form input:-ms-input-placeholder,
-#page-3 #faq-section .right-side .question-form input:-ms-input-placeholder,
-#page-4 #faq-section .right-side .question-form input:-ms-input-placeholder,
-#page-5 #faq-section .right-side .question-form input:-ms-input-placeholder,
-#page-6 #faq-section .right-side .question-form input:-ms-input-placeholder {
+#consumer-page #faq-section .right-side .question-form input:-ms-input-placeholder,
+#business-page #faq-section .right-side .question-form input:-ms-input-placeholder,
+#about-us-page #faq-section .right-side .question-form input:-ms-input-placeholder,
+#pricing-page #faq-section .right-side .question-form input:-ms-input-placeholder,
+#why-page #faq-section .right-side .question-form input:-ms-input-placeholder {
   color: #b2b7bb;
 }
 
-#page-2 #faq-section .right-side .question-form input::-ms-input-placeholder,
-#page-3 #faq-section .right-side .question-form input::-ms-input-placeholder,
-#page-4 #faq-section .right-side .question-form input::-ms-input-placeholder,
-#page-5 #faq-section .right-side .question-form input::-ms-input-placeholder,
-#page-6 #faq-section .right-side .question-form input::-ms-input-placeholder {
+#consumer-page #faq-section .right-side .question-form input::-ms-input-placeholder,
+#business-page #faq-section .right-side .question-form input::-ms-input-placeholder,
+#about-us-page #faq-section .right-side .question-form input::-ms-input-placeholder,
+#pricing-page #faq-section .right-side .question-form input::-ms-input-placeholder,
+#why-page #faq-section .right-side .question-form input::-ms-input-placeholder {
   color: #b2b7bb;
 }
 
-#page-2 #faq-section .right-side .question-form input::placeholder,
-#page-3 #faq-section .right-side .question-form input::placeholder,
-#page-4 #faq-section .right-side .question-form input::placeholder,
-#page-5 #faq-section .right-side .question-form input::placeholder,
-#page-6 #faq-section .right-side .question-form input::placeholder {
+#consumer-page #faq-section .right-side .question-form input::placeholder,
+#business-page #faq-section .right-side .question-form input::placeholder,
+#about-us-page #faq-section .right-side .question-form input::placeholder,
+#pricing-page #faq-section .right-side .question-form input::placeholder,
+#why-page #faq-section .right-side .question-form input::placeholder {
   color: #b2b7bb;
 }
 
 @media (min-width: 1600px) {
-  #page-2 #faq-section .right-side .question-form input,
-  #page-3 #faq-section .right-side .question-form input,
-  #page-4 #faq-section .right-side .question-form input,
-  #page-5 #faq-section .right-side .question-form input,
-  #page-6 #faq-section .right-side .question-form input {
+  #consumer-page #faq-section .right-side .question-form input,
+  #business-page #faq-section .right-side .question-form input,
+  #about-us-page #faq-section .right-side .question-form input,
+  #pricing-page #faq-section .right-side .question-form input,
+  #why-page #faq-section .right-side .question-form input {
     font-size: 20px;
   }
 }
 
 /* ================================= */
-/* ===== Page 2 ===== */
+/* ===== Consumer Page ===== */
 /* ================================= */
-#page-2 {
+#consumer-page {
   /* ====== Vicious Circle Section ====== */
   /* ====== How We Consume Section ====== */
   /* ====== Marketing Oriented Way Section ====== */
   /* ====== Make Business Follow Section ====== */
 }
 
-#page-2 #vicious-circle-section {
+#consumer-page #vicious-circle-section {
   padding: 100px 0;
 }
 
 @media (max-width: 575px) {
-  #page-2 #vicious-circle-section {
+  #consumer-page #vicious-circle-section {
     padding: 50px 0;
   }
 }
 
-#page-2 #how-we-consume-section .bg-color {
+#consumer-page #how-we-consume-section .bg-color {
   background-color: #9100ff;
   border-radius: 30px;
   overflow: hidden;
 }
 
-#page-2 #how-we-consume-section .bg-color .bg-image {
-  background-image: url("../img/page-2//how-we-consume-bg.png");
+#consumer-page #how-we-consume-section .bg-color .bg-image {
+  background-image: url("../img/consumer-page/how-we-consume-bg.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1122,28 +1199,28 @@ footer .footer-copyright a {
 }
 
 @media only screen and (max-width: 991px) {
-  #page-2 #how-we-consume-section .bg-color .bg-image {
+  #consumer-page #how-we-consume-section .bg-color .bg-image {
     background-position: center left;
   }
 }
 
 @media only screen and (max-width: 575px) {
-  #page-2 #how-we-consume-section .bg-color .bg-image {
+  #consumer-page #how-we-consume-section .bg-color .bg-image {
     padding: 30px;
   }
 }
 
-#page-2 #marketing-oriented-way-section {
+#consumer-page #marketing-oriented-way-section {
   padding: 100px 0;
 }
 
 @media (max-width: 575px) {
-  #page-2 #marketing-oriented-way-section {
+  #consumer-page #marketing-oriented-way-section {
     padding: 60px 0;
   }
 }
 
-#page-2 #marketing-oriented-way-section .left-side .marketing-oriented-way-check-list .media i {
+#consumer-page #marketing-oriented-way-section .left-side .marketing-oriented-way-check-list .media i {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   font-size: 10px;
@@ -1151,31 +1228,31 @@ footer .footer-copyright a {
   margin-top: 10px;
 }
 
-#page-2 #marketing-oriented-way-section .right-side {
+#consumer-page #marketing-oriented-way-section .right-side {
   background: #fff7f2;
   border-radius: 30px;
 }
 
-#page-2 #marketing-oriented-way-section .right-side .box {
+#consumer-page #marketing-oriented-way-section .right-side .box {
   border-radius: 15px;
 }
 
-#page-2 #marketing-oriented-way-section .right-side .box .para-text {
+#consumer-page #marketing-oriented-way-section .right-side .box .para-text {
   color: #ff771c;
 }
 
-#page-2 #make-business-follow-section {
+#consumer-page #make-business-follow-section {
   padding: 100px 0;
 }
 
 @media (max-width: 575px) {
-  #page-2 #make-business-follow-section {
+  #consumer-page #make-business-follow-section {
     padding: 50px 0;
   }
 }
 
-#page-2 #make-business-follow-section .bg-image {
-  background-image: url("../img//page-2/make-business-follow-bg.png");
+#consumer-page #make-business-follow-section .bg-image {
+  background-image: url("../img/consumer-page/make-business-follow-bg.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1185,114 +1262,114 @@ footer .footer-copyright a {
 }
 
 @media (max-width: 991px) {
-  #page-2 #make-business-follow-section .bg-image {
+  #consumer-page #make-business-follow-section .bg-image {
     padding: 30px 30px 0 30px;
     background-position: left;
   }
 }
 
-#page-2 #make-business-follow-section .left-side .heading {
+#consumer-page #make-business-follow-section .left-side .heading {
   font-family: "poligon-regular";
 }
 
-#page-2 #make-business-follow-section .left-side .heading b {
+#consumer-page #make-business-follow-section .left-side .heading b {
   color: #ff461c;
   border-bottom: 2px solid #ff461c;
 }
 
 /* ================================= */
-/* ====== Page 3 ===== */
+/* ====== Business Page ===== */
 /* ================================= */
-#page-3 {
+#business-page {
   /* ====== Banner Section ====== */
   /* ====== Text Section ====== */
   /* ====== Why Section ====== */
   /* ====== Q.Everything Section ====== */
 }
 
-#page-3 #banner-section {
-  background-image: url("../img/page-3/banner-bg.png");
+#business-page #banner-section {
+  background-image: url("../img/business-page/banner-bg.png");
 }
 
-#page-3 #text-section {
+#business-page #text-section {
   -webkit-transform: translateY(-100px);
           transform: translateY(-100px);
 }
 
 @media (max-width: 767px) {
-  #page-3 #text-section {
+  #business-page #text-section {
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
   }
 }
 
-#page-3 #text-section .left-side h2 {
+#business-page #text-section .left-side h2 {
   font-family: 'sofia-pro-bold';
   line-height: 1.5;
 }
 
-#page-3 #why-section {
+#business-page #why-section {
   padding: 0 0 100px 0;
 }
 
 @media (max-width: 767px) {
-  #page-3 #why-section {
+  #business-page #why-section {
     padding: 50px 0;
   }
 }
 
-#page-3 #q-everything-section {
+#business-page #q-everything-section {
   padding-bottom: 100px;
 }
 
 @media (max-width: 575px) {
-  #page-3 #q-everything-section {
+  #business-page #q-everything-section {
     padding-bottom: 70px;
   }
 }
 
-#page-3 #q-everything-section .bg {
+#business-page #q-everything-section .bg {
   background: #fff7f2;
   padding: 30px;
   border-radius: 30px;
 }
 
-#page-3 #q-everything-section h2 {
+#business-page #q-everything-section h2 {
   font-size: 28px;
 }
 
 @media (min-width: 1600px) {
-  #page-3 #q-everything-section h2 {
+  #business-page #q-everything-section h2 {
     font-size: 32px;
   }
 }
 
-#page-3 #q-everything-section .left-side {
+#business-page #q-everything-section .left-side {
   background: #fff7f2;
   border-radius: 30px;
 }
 
-#page-3 #q-everything-section .left-side .box {
+#business-page #q-everything-section .left-side .box {
   border-radius: 15px;
 }
 
-#page-3 #q-everything-section .left-side .para-text {
+#business-page #q-everything-section .left-side .para-text {
   color: #ff771c;
 }
 
 /* ================================= */
-/* ====== Page 4 ===== */
+/* ====== About Us Page ===== */
 /* ================================= */
-#page-4 {
+#about-us-page {
   /* ====== Banner Section ====== */
   /* ====== Why Section ====== */
 }
 
-#page-4 #banner-section {
-  background-image: url("../img/page-4/banner-bg.png");
+#about-us-page #banner-section {
+  background-image: url("../img/about-us-page/banner-bg.png");
 }
 
-#page-4 #why-section {
+#about-us-page #why-section {
   padding-bottom: 150px;
   -webkit-transform: translateY(-100px);
           transform: translateY(-100px);
@@ -1300,56 +1377,56 @@ footer .footer-copyright a {
 }
 
 @media (max-width: 991px) {
-  #page-4 #why-section {
+  #about-us-page #why-section {
     padding-bottom: 60px;
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
   }
 }
 
-#page-4 #why-section h1 {
+#about-us-page #why-section h1 {
   font-family: 'sinthya';
   color: #ff771c;
   font-size: 80px;
 }
 
 @media (max-width: 575px) {
-  #page-4 #why-section h1 {
+  #about-us-page #why-section h1 {
     font-size: 60px;
   }
 }
 
-#page-4 #why-section h2 {
+#about-us-page #why-section h2 {
   font-family: 'sofia-pro-bold';
 }
 
 /* ================================= */
-/* ====== Page 5 ===== */
+/* ====== Pricing Pag ===== */
 /* ================================= */
-#page-5 {
+#pricing-page {
   /* ====== Banner Section ====== */
   /* ====== Tab Section ====== */
   /* ====== Footer Section ====== */
 }
 
-#page-5 #banner-section {
-  background-image: url("../img/page-5/banner-bg.png");
+#pricing-page #banner-section {
+  background-image: url("../img/pricing-page/banner-bg.png");
 }
 
-#page-5 #tab-section {
+#pricing-page #tab-section {
   -webkit-transform: translateY(-100px);
           transform: translateY(-100px);
 }
 
 @media (max-width: 991px) {
-  #page-5 #tab-section {
+  #pricing-page #tab-section {
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
     padding-bottom: 70px;
   }
 }
 
-#page-5 #tab-section .nav-tabs li button {
+#pricing-page #tab-section .nav-tabs li button {
   font-family: 'sofia-pro-bold';
   border: 3px solid grey;
   color: grey;
@@ -1359,52 +1436,52 @@ footer .footer-copyright a {
   font-size: 19px;
 }
 
-#page-5 #tab-section .nav-tabs li button.active {
+#pricing-page #tab-section .nav-tabs li button.active {
   border: 3px solid #ff461c;
   color: #ff461c;
 }
 
 @media (min-width: 1600px) {
-  #page-5 #tab-section .nav-tabs li button {
+  #pricing-page #tab-section .nav-tabs li button {
     font-size: 23px;
   }
 }
 
-#page-5 #tab-section .tab-content {
+#pricing-page #tab-section .tab-content {
   background: #fff7f2 0% 0% no-repeat padding-box;
   border-radius: 30px;
   padding: 50px 20px;
 }
 
-#page-5 #tab-section .tab-content .change-cards .change-card {
+#pricing-page #tab-section .tab-content .change-cards .change-card {
   -webkit-box-shadow: 0px 6px 28px #0000001a;
           box-shadow: 0px 6px 28px #0000001a;
   border-radius: 22px;
   padding: 30px;
 }
 
-#page-5 #tab-section .tab-content .change-cards .change-card p {
+#pricing-page #tab-section .tab-content .change-cards .change-card p {
   color: #6d7a8e;
 }
 
-#page-5 #tab-section .tab-content .change-cards .change-card:hover {
+#pricing-page #tab-section .tab-content .change-cards .change-card:hover {
   background: transparent linear-gradient(121deg, #ff705a 0%, #f2a355 100%) 0% 0% no-repeat padding-box;
   -webkit-box-shadow: 0px 6px 28px #0000001a;
           box-shadow: 0px 6px 28px #0000001a;
   cursor: pointer;
 }
 
-#page-5 #tab-section .tab-content .change-cards .change-card:hover h3,
-#page-5 #tab-section .tab-content .change-cards .change-card:hover p {
+#pricing-page #tab-section .tab-content .change-cards .change-card:hover h3,
+#pricing-page #tab-section .tab-content .change-cards .change-card:hover p {
   color: #ffffff;
 }
 
-#page-5 #tab-section .tab-content .lets-talk .heading {
+#pricing-page #tab-section .tab-content .lets-talk .heading {
   color: #2a4255;
 }
 
-#page-5 #tab-section .tab-content .lets-talk form input,
-#page-5 #tab-section .tab-content .lets-talk form textarea {
+#pricing-page #tab-section .tab-content .lets-talk form input,
+#pricing-page #tab-section .tab-content .lets-talk form textarea {
   padding: 10px 20px;
   outline: none !important;
   border: 0;
@@ -1415,67 +1492,67 @@ footer .footer-copyright a {
 }
 
 @media (min-width: 1600px) {
-  #page-5 #tab-section .tab-content .lets-talk form input,
-  #page-5 #tab-section .tab-content .lets-talk form textarea {
+  #pricing-page #tab-section .tab-content .lets-talk form input,
+  #pricing-page #tab-section .tab-content .lets-talk form textarea {
     font-size: 20px;
   }
 }
 
-#page-5 #tab-section .tab-content .lets-talk form textarea {
+#pricing-page #tab-section .tab-content .lets-talk form textarea {
   height: 150px;
 }
 
-#page-5 footer {
+#pricing-page footer {
   padding-top: 0 !important;
 }
 
 /* ================================= */
-/* ====== Page 6 ===== */
+/* ====== Why Page ===== */
 /* ================================= */
-#page-6 {
+#why-page {
   /* ====== Banner Section ====== */
   /* ====== Understand Section ====== */
   /* ====== Understand Section ====== */
 }
 
-#page-6 #banner-section {
-  background-image: url("../img/page-5/banner-bg.png");
+#why-page #banner-section {
+  background-image: url("../img/pricing-page/banner-bg.png");
 }
 
-#page-6 #understand-section {
+#why-page #understand-section {
   -webkit-transform: translateY(-100px);
           transform: translateY(-100px);
 }
 
 @media only screen and (max-width: 991px) {
-  #page-6 #understand-section {
+  #why-page #understand-section {
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
   }
 }
 
-#page-6 #understand-section .section-title .para-text.orange {
+#why-page #understand-section .section-title .para-text.orange {
   color: #ff461c;
   font-family: "poligon-bold";
 }
 
-#page-6 #understand-section .accept-following-list-box {
+#why-page #understand-section .accept-following-list-box {
   background: #fff7f2 0% 0% no-repeat padding-box;
   border-radius: 28px;
   padding: 20px;
 }
 
-#page-6 #understand-section .accept-following-list-box .media i {
+#why-page #understand-section .accept-following-list-box .media i {
   font-size: 12px;
   margin-top: 9px;
 }
 
-#page-6 #text-section {
+#why-page #text-section {
   padding-bottom: 250px;
 }
 
 @media only screen and (max-width: 991px) {
-  #page-6 #text-section {
+  #why-page #text-section {
     padding: 80px 0;
   }
 }

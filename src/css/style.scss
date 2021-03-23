@@ -175,13 +175,13 @@ button:focus {
     .navbar-brand {
       img {
         @media only screen and (max-width: 575px) {
-          width: 200px;
+          width: 190px;
         }
       }
     }
     .navbar-toggler {
       background-color: transparent;
-      z-index: 9999999999999999999999999 !important;
+      z-index: 9999;
       .dot-icon {
         transition: all 0.3s ease-in-out;
         &.rotate {
@@ -203,7 +203,7 @@ button:focus {
       height: 0%;
       top: 0;
       left: 0;
-      z-index: 99999999 !important;
+      z-index: 999;
       background-color: #6a23f0;
       visibility: hidden;
       opacity: 0;
@@ -274,7 +274,14 @@ button:focus {
             }
           }
         }
+        /* Modal Button */
+        .nav-item .modal__btn {
+          border: 0 !important;
+          outline: 0 !important;
+          background: transparent !important;
+        }
       }
+
       // Header Shape Divider
       .header-shape-divider {
         z-index: -1;
@@ -311,6 +318,58 @@ button:focus {
     }
   }
 }
+
+/* Contac Us PopUp Modal */
+.modal {
+  z-index: 9999999999 !important;
+  padding: 0 !important;
+  .cencel-button-box {
+    position: fixed;
+    right: 30px;
+    top: 20px;
+    z-index: 9 !important;
+    button {
+      font-size: 22px;
+      padding: 5px 14px !important;
+      border-radius: 50%;
+      background-color: #212121 !important;
+      @media (max-width: 767px) {
+        font-size: 16px;
+        padding: 4px 10px !important;
+      }
+    }
+  }
+  .modal-dialog {
+    width: 100% !important;
+    max-width: 100% !important;
+    background-color: #2b59d7;
+    min-height: 100vh;
+    margin: 0 !important;
+    .modal-content {
+      max-width: 900px;
+      margin: auto;
+      background-color: transparent;
+      border: 0;
+      @media (max-width: 1199px) {
+        max-width: 720px;
+      }
+      @media (max-width: 991px) {
+        max-width: 660px;
+      }
+      @media (max-width: 767px) {
+        max-width: 500px;
+      }
+      @media (max-width: 575px) {
+        max-width: 100%;
+        width: 100%;
+        padding-left: 35px;
+        padding-right: 35px;
+      }
+    }
+  }
+}
+
+/*========================*/
 
 /* ======= Banner Section ======= */
 #banner-section {
@@ -658,14 +717,14 @@ footer {
 /* ================================= */
 /* == Common For Other pages == */
 /* ================================= */
-#page-2,
-#page-3,
-#page-4,
-#page-5,
-#page-6 {
+#consumer-page,
+#business-page,
+#about-us-page,
+#pricing-page,
+#why-page {
   /* ====== Banner Section ====== */
   #banner-section {
-    background: url('../img/page-2/banner-bg.png');
+    background: url('../img/consumer-page/banner-bg.png');
     .banner-bg-layer {
       // Banner Content
       .banner-content {
@@ -723,11 +782,11 @@ footer {
             border: none !important;
             background-color: transparent !important;
             &::after {
-              background-image: url('../img/page-2/faq-minus.svg');
+              background-image: url('../img/consumer-page/faq-minus.svg');
             }
             &.collapsed {
               &::after {
-                background-image: url('../img/page-2/faq-plus.svg');
+                background-image: url('../img/consumer-page/faq-plus.svg');
               }
             }
             @media (min-width: 1600px) {
@@ -770,9 +829,9 @@ footer {
 }
 
 /* ================================= */
-/* ===== Page 2 ===== */
+/* ===== Consumer Page ===== */
 /* ================================= */
-#page-2 {
+#consumer-page {
   /* ====== Vicious Circle Section ====== */
   #vicious-circle-section {
     padding: 100px 0;
@@ -788,7 +847,7 @@ footer {
       border-radius: 30px;
       overflow: hidden;
       .bg-image {
-        background-image: url('../img/page-2//how-we-consume-bg.png');
+        background-image: url('../img/consumer-page/how-we-consume-bg.png');
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -840,7 +899,7 @@ footer {
       padding: 50px 0;
     }
     .bg-image {
-      background-image: url('../img//page-2/make-business-follow-bg.png');
+      background-image: url('../img/consumer-page/make-business-follow-bg.png');
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
@@ -865,12 +924,12 @@ footer {
 }
 
 /* ================================= */
-/* ====== Page 3 ===== */
+/* ====== Business Page ===== */
 /* ================================= */
-#page-3 {
+#business-page {
   /* ====== Banner Section ====== */
   #banner-section {
-    background-image: url('../img/page-3/banner-bg.png');
+    background-image: url('../img/business-page/banner-bg.png');
   }
   /* ====== Text Section ====== */
   #text-section {
@@ -925,12 +984,12 @@ footer {
 }
 
 /* ================================= */
-/* ====== Page 4 ===== */
+/* ====== About Us Page ===== */
 /* ================================= */
-#page-4 {
+#about-us-page {
   /* ====== Banner Section ====== */
   #banner-section {
-    background-image: url('../img/page-4/banner-bg.png');
+    background-image: url('../img/about-us-page/banner-bg.png');
   }
 
   /* ====== Why Section ====== */
@@ -957,12 +1016,12 @@ footer {
 }
 
 /* ================================= */
-/* ====== Page 5 ===== */
+/* ====== Pricing Pag ===== */
 /* ================================= */
-#page-5 {
+#pricing-page {
   /* ====== Banner Section ====== */
   #banner-section {
-    background-image: url('../img/page-5/banner-bg.png');
+    background-image: url('../img/pricing-page/banner-bg.png');
   }
 
   /* ====== Tab Section ====== */
@@ -1054,12 +1113,12 @@ footer {
 }
 
 /* ================================= */
-/* ====== Page 6 ===== */
+/* ====== Why Page ===== */
 /* ================================= */
-#page-6 {
+#why-page {
   /* ====== Banner Section ====== */
   #banner-section {
-    background-image: url('../img/page-5/banner-bg.png');
+    background-image: url('../img/pricing-page/banner-bg.png');
   }
 
   /* ====== Understand Section ====== */
