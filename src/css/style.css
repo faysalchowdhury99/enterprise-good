@@ -655,12 +655,18 @@ button:focus {
 
 /* ======= Image Section ======= */
 #image-section {
-  padding: 100px 0;
+  margin: 100px 0;
+  padding: 200px 0;
+  background-image: url("../img/image.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @media only screen and (max-width: 575px) {
   #image-section {
-    padding: 50px 0;
+    margin: 50px 0;
+    padding: 150px 0;
   }
 }
 
@@ -1012,7 +1018,11 @@ footer .footer-copyright a {
 #about-us-page #why-section .right-side .para-text b,
 #pricing-page #why-section .right-side .para-text b,
 #why-page #why-section .right-side .para-text b {
+  background: #fff7f2;
+  border-radius: 10px;
+  padding: 10px;
   color: #ff461c;
+  display: block;
 }
 
 #consumer-page #faq-section,
@@ -1454,25 +1464,16 @@ footer .footer-copyright a {
 }
 
 #pricing-page #tab-section .tab-content .change-cards .change-card {
+  background: transparent linear-gradient(121deg, #ff705a 0%, #f2a355 100%) 0% 0% no-repeat padding-box;
   -webkit-box-shadow: 0px 6px 28px #0000001a;
           box-shadow: 0px 6px 28px #0000001a;
   border-radius: 22px;
   padding: 30px;
-}
-
-#pricing-page #tab-section .tab-content .change-cards .change-card p {
-  color: #6d7a8e;
-}
-
-#pricing-page #tab-section .tab-content .change-cards .change-card:hover {
-  background: transparent linear-gradient(121deg, #ff705a 0%, #f2a355 100%) 0% 0% no-repeat padding-box;
-  -webkit-box-shadow: 0px 6px 28px #0000001a;
-          box-shadow: 0px 6px 28px #0000001a;
   cursor: pointer;
 }
 
-#pricing-page #tab-section .tab-content .change-cards .change-card:hover h3,
-#pricing-page #tab-section .tab-content .change-cards .change-card:hover p {
+#pricing-page #tab-section .tab-content .change-cards .change-card h3,
+#pricing-page #tab-section .tab-content .change-cards .change-card p {
   color: #ffffff;
 }
 

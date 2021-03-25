@@ -503,9 +503,15 @@ button:focus {
 
 /* ======= Image Section ======= */
 #image-section {
-  padding: 100px 0;
+  margin: 100px 0;
+  padding: 200px 0;
+  background-image: url('../img/image.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   @media only screen and (max-width: 575px) {
-    padding: 50px 0;
+    margin: 50px 0;
+    padding: 150px 0;
   }
 }
 
@@ -756,7 +762,11 @@ footer {
       }
       .para-text {
         b {
+          background: #fff7f2;
+          border-radius: 10px;
+          padding: 10px;
           color: #ff461c;
+          display: block;
         }
       }
     }
@@ -1060,22 +1070,16 @@ footer {
       // Change Cards
       .change-cards {
         .change-card {
+          background: transparent
+            linear-gradient(121deg, #ff705a 0%, #f2a355 100%) 0% 0% no-repeat
+            padding-box;
           box-shadow: 0px 6px 28px #0000001a;
           border-radius: 22px;
           padding: 30px;
+          cursor: pointer;
+          h3,
           p {
-            color: #6d7a8e;
-          }
-          &:hover {
-            background: transparent
-              linear-gradient(121deg, #ff705a 0%, #f2a355 100%) 0% 0% no-repeat
-              padding-box;
-            box-shadow: 0px 6px 28px #0000001a;
-            cursor: pointer;
-            h3,
-            p {
-              color: #ffffff;
-            }
+            color: #ffffff;
           }
         }
       }
