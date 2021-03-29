@@ -328,11 +328,19 @@ button:focus {
     right: 30px;
     top: 20px;
     z-index: 9 !important;
+    &:focus {
+      outline: none !important;
+      border: none !important;
+    }
     button {
       font-size: 22px;
       padding: 5px 14px !important;
       border-radius: 50%;
-      background-color: #212121 !important;
+      background: transparent !important;
+      &:focus {
+        outline: none !important;
+        border: none !important;
+      }
       @media (max-width: 767px) {
         font-size: 16px;
         padding: 4px 10px !important;
@@ -342,8 +350,7 @@ button:focus {
   .modal-dialog {
     width: 100% !important;
     max-width: 100% !important;
-    background: transparent linear-gradient(180deg, #9100ff 0%, #2b59d7 100%) 0%
-      0% no-repeat padding-box;
+    background: #9100ff;
     min-height: 100vh;
     margin: 0 !important;
     .modal-content {

@@ -431,11 +431,21 @@ button:focus {
   z-index: 9 !important;
 }
 
+.modal .cencel-button-box:focus {
+  outline: none !important;
+  border: none !important;
+}
+
 .modal .cencel-button-box button {
   font-size: 22px;
   padding: 5px 14px !important;
   border-radius: 50%;
-  background-color: #212121 !important;
+  background: transparent !important;
+}
+
+.modal .cencel-button-box button:focus {
+  outline: none !important;
+  border: none !important;
 }
 
 @media (max-width: 767px) {
@@ -448,8 +458,7 @@ button:focus {
 .modal .modal-dialog {
   width: 100% !important;
   max-width: 100% !important;
-  background: transparent -webkit-gradient(linear, left top, left bottom, from(#9100ff), to(#2b59d7)) 0% 0% no-repeat padding-box;
-  background: transparent linear-gradient(180deg, #9100ff 0%, #2b59d7 100%) 0% 0% no-repeat padding-box;
+  background: #9100ff;
   min-height: 100vh;
   margin: 0 !important;
 }
