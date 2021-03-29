@@ -448,7 +448,8 @@ button:focus {
 .modal .modal-dialog {
   width: 100% !important;
   max-width: 100% !important;
-  background-color: #2b59d7;
+  background: transparent -webkit-gradient(linear, left top, left bottom, from(#9100ff), to(#2b59d7)) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(180deg, #9100ff 0%, #2b59d7 100%) 0% 0% no-repeat padding-box;
   min-height: 100vh;
   margin: 0 !important;
 }
